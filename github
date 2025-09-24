@@ -1,0 +1,7 @@
+#Liên kết remote
+- git remote add <name><url>-> : dùng để liên kết với repo trên github, name_repo dùng để phân biệt các remote khác nhau
+- git branch -M main: thiết lập tên branch local thành "main" đồng bộ với github
+- git remote -v: xem các remote hiện có
+Khi có các remote khác thì lệnh push theo tên của tụi nó:
+- git push <name> main : thêm --force để ghi đè file và commit lên file cũ
+- git pull <name>
