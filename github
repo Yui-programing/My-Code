@@ -3,5 +3,16 @@
 - git branch -M main: thiết lập tên branch local thành "main" đồng bộ với github
 - git remote -v: xem các remote hiện có
 Khi có các remote khác thì lệnh push theo tên của tụi nó:
-- git push <name> main : thêm --force để ghi đè file và commit lên file cũ
+- git push <name> main : thêm --force để ghi đè file và commit lên file cũ(chỉ dùng khi chắc chắn ghi đề file)
+- git pull <name> main --allow-unrelated-histories: dùng khi repo đã có sẵn commit
 - git pull <name>
+#Các bước để quản lí git/github:
+b1. cd vào project và thêm git init(.git)
+b2. git remote add <name><url>
+b3. git branch -M main
+b4. git add .
+b5. git commit -m " "
+b6. git push <name> main
+#Lỗi non-fast-forward (trong repo có sẵn commit như readme...)
+  git pull origin main --allow-unrelated-histories
+  git push origin main
